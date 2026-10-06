@@ -1,0 +1,6 @@
+services:
+  trino:
+    image: trinodb/trino:455
+    ports: ["8080:8080"]
+    volumes:
+      - ./memory.properties:/etc/trino/catalog/memory.properties:ro
